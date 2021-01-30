@@ -30,7 +30,7 @@ exports.createPages = ({ graphql, actions }) => {
             console.log("Error retrieving contentful data", result.errors)
         }
 
-        const blogPostTemplate = path.resolve("./src/pages/blogpost.js")
+        const blogPostTemplate = path.resolve("./src/templates/BlogPost.js")
 
         result.data.allContentfulBlogPost.edges.forEach(edge => {
             createPage({

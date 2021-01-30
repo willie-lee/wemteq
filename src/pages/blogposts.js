@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const BlogPosts = ({ data }) => {
     const blogPosts = data.allContentfulBlogPost.edges
@@ -18,7 +18,6 @@ const BlogPosts = ({ data }) => {
                     </div>
                 ))}
             </div>
-            <Link to="/">Go back to the homepage</Link>
         </Layout>
     )
 }
